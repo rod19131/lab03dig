@@ -9,11 +9,11 @@ wire a1; //or out variable
 not PnA(n1,A); //not gates para A, B y C
 not PnB(n2,B);
 not PnC(n3,C);
-or Pw1(w1,A,B,C);//A'+B+C' A+B+C
-or Pw2(w2,A,n2,C);
-or Pw3(w3,A,n2,n3);
-or Pw4(w4,n1,B,C);
-or Pw5(w5,n1,B,n3);
+or Pw1(w1,A,B,C);//A+B+C 
+or Pw2(w2,A,n2,C);//A+B'+C
+or Pw3(w3,A,n2,n3);//A+B'+C'
+or Pw4(w4,n1,B,C);//A'+B+C
+or Pw5(w5,n1,B,n3);//A'+B+C'
 and Pa1(a1,w1,w2,w3,w4,w5);//Y2
 //comienzo
 initial begin

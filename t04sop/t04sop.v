@@ -10,13 +10,13 @@ not PnA(n1,A); //not gates para A, B, C y D
 not PnB(n2,B);
 not PnC(n3,C);
 not PnD(n4,D);
-and Pw1(w1,n1,n2,n3,n4);//A+B+C
-and Pw2(w2,n1,n2,C,n4);//A+B+C
-and Pw3(w3,n1,n2,C,D);//A+B+C
-and Pw4(w4,n1,B,C,n4);
-and Pw5(w5,n1,B,C,D);
-and Pw6(w6,A,n1,n2,n4);
-and Pw7(w7,A,n2,C,n4);
+and Pw1(w1,n1,n2,n3,n4);//A'+B'+C+D
+and Pw2(w2,n1,n2,C,n4);//A+B+C+D
+and Pw3(w3,n1,n2,C,D);//A+B+C+D
+and Pw4(w4,n1,B,C,n4);//A+B+C+D
+and Pw5(w5,n1,B,C,D);//A+B+C+D
+and Pw6(w6,A,n1,n2,n4);//A+B+C+D
+and Pw7(w7,A,n2,C,n4);//A+B+C+D
 or Pr1(r1,w1,w2,w3,w4,w5,w6,w7);//Y3
 //comienzo
 initial begin
