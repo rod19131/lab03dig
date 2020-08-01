@@ -9,10 +9,10 @@ wire a1; //and out variable
 not PnA(n1,A); //not gates para A, B y C
 not PnB(n2,B);
 not PnC(n3,C);
-or Pw1(w1,n1,n2,C);//A'B'C
-or Pw2(w2,A,B,n3);//ABC'
-or Pw3(w3,A,B,C);//ABC
-and Pa1(a1,w1,w2,w3);//Y2
+and Pw1(w1,n1,n2,C);//A'B'C
+and Pw2(w2,A,B,n3);//ABC'
+and Pw3(w3,A,B,C);//ABC
+or Pa1(a1,w1,w2,w3);//Y2
 //comienzo
 initial begin
     $display("A B C | Y");

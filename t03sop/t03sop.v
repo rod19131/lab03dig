@@ -15,16 +15,16 @@ and Pw2(w2,n1,n2,n3,D);//A'B'C'D
 and Pw3(w3,n2,n2,C,n4);//A'B'CD'
 and Pw4(w4,n1,n2,C,D);//A'B'CD
 and Pw5(w5,A,n2,n3,n4);//A'B'C'D'
-and Pw6(w6,A,n2,C,n4)//AB'CD'
+and Pw6(w6,A,n2,C,n4);//AB'CD'
 and Pw7(w7,A,B,C,n4);//ABCD'
 or Pr1(r1,w1,w2,w3,w4,w5,w6,w7);//Y3
 //comienzo
 initial begin
     $display("A B C D | Y");
     $display("-----------");
-    $monitor("%b %b %b %b | %b", A, B, C, D r1);
+    $monitor("%b %b %b %b | %b", A, B, C, D, r1);
     //condición inicial
-    A = 0; B = 0; C = 0; D = 0
+    A = 0; B = 0; C = 0; D = 0;
     //simulación combinaciones
     #1 D = 1;
     #1 C = 1; D = 0;
